@@ -11,9 +11,9 @@ public class Splash_Screen_GUI extends javax.swing.JFrame {
     private void initComponents() {
 
         Background = new javax.swing.JPanel();
-        Logo = new org.edisoncor.gui.panel.PanelImage();
-        Acess = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        Logo_IMG = new org.edisoncor.gui.panel.PanelImage();
+        Acess_BTN = new javax.swing.JButton();
+        Close_BTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -21,46 +21,46 @@ public class Splash_Screen_GUI extends javax.swing.JFrame {
         Background.setBackground(new java.awt.Color(102, 102, 102));
         Background.setLayout(null);
 
-        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Flat Logo.png"))); // NOI18N
+        Logo_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Flat Logo.png"))); // NOI18N
 
-        javax.swing.GroupLayout LogoLayout = new javax.swing.GroupLayout(Logo);
-        Logo.setLayout(LogoLayout);
-        LogoLayout.setHorizontalGroup(
-            LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout Logo_IMGLayout = new javax.swing.GroupLayout(Logo_IMG);
+        Logo_IMG.setLayout(Logo_IMGLayout);
+        Logo_IMGLayout.setHorizontalGroup(
+            Logo_IMGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 203, Short.MAX_VALUE)
         );
-        LogoLayout.setVerticalGroup(
-            LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        Logo_IMGLayout.setVerticalGroup(
+            Logo_IMGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 201, Short.MAX_VALUE)
         );
 
-        Background.add(Logo);
-        Logo.setBounds(140, 10, 203, 201);
+        Background.add(Logo_IMG);
+        Logo_IMG.setBounds(140, 10, 203, 201);
 
-        Acess.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        Acess.setText("Acessar Loja Virtual");
-        Acess.setFocusable(false);
-        Acess.addActionListener(new java.awt.event.ActionListener() {
+        Acess_BTN.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        Acess_BTN.setText("Acessar Loja Virtual");
+        Acess_BTN.setFocusable(false);
+        Acess_BTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AcessActionPerformed(evt);
+                Acess_BTNActionPerformed(evt);
             }
         });
-        Background.add(Acess);
-        Acess.setBounds(160, 220, 170, 30);
+        Background.add(Acess_BTN);
+        Acess_BTN.setBounds(160, 220, 170, 30);
 
-        jButton1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("X");
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setFocusable(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Close_BTN.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        Close_BTN.setForeground(new java.awt.Color(255, 255, 255));
+        Close_BTN.setText("X");
+        Close_BTN.setBorderPainted(false);
+        Close_BTN.setContentAreaFilled(false);
+        Close_BTN.setFocusable(false);
+        Close_BTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                Close_BTNActionPerformed(evt);
             }
         });
-        Background.add(jButton1);
-        jButton1.setBounds(423, 10, 50, 30);
+        Background.add(Close_BTN);
+        Close_BTN.setBounds(423, 10, 50, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -77,14 +77,14 @@ public class Splash_Screen_GUI extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void AcessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AcessActionPerformed
+    private void Acess_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Acess_BTNActionPerformed
         new Pedido_GUI().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_AcessActionPerformed
+    }//GEN-LAST:event_Acess_BTNActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void Close_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Close_BTNActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_Close_BTNActionPerformed
     
     /**
      * @param args the command line arguments
@@ -122,9 +122,9 @@ public class Splash_Screen_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Acess;
+    private javax.swing.JButton Acess_BTN;
     private javax.swing.JPanel Background;
-    private org.edisoncor.gui.panel.PanelImage Logo;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton Close_BTN;
+    private org.edisoncor.gui.panel.PanelImage Logo_IMG;
     // End of variables declaration//GEN-END:variables
 }

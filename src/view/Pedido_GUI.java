@@ -27,294 +27,304 @@ public class Pedido_GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Fundo = new javax.swing.JPanel();
-        panelImage2 = new org.edisoncor.gui.panel.PanelImage();
-        buttonIcon1 = new org.edisoncor.gui.button.ButtonIcon();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        buttonIcon2 = new org.edisoncor.gui.button.ButtonIcon();
-        jLabel3 = new javax.swing.JLabel();
-        buttonIcon3 = new org.edisoncor.gui.button.ButtonIcon();
-        buttonIcon4 = new org.edisoncor.gui.button.ButtonIcon();
-        jLabel4 = new javax.swing.JLabel();
-        buttonIcon5 = new org.edisoncor.gui.button.ButtonIcon();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        buttonIcon6 = new org.edisoncor.gui.button.ButtonIcon();
-        jLabel7 = new javax.swing.JLabel();
-        buttonIcon7 = new org.edisoncor.gui.button.ButtonIcon();
-        buttonIcon8 = new org.edisoncor.gui.button.ButtonIcon();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        buttonIcon10 = new org.edisoncor.gui.button.ButtonIcon();
-        jLabel14 = new javax.swing.JLabel();
-        buttonIcon11 = new org.edisoncor.gui.button.ButtonIcon();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        Background = new javax.swing.JPanel();
+        Banner_IMG = new org.edisoncor.gui.panel.PanelImage();
+        Classic_LBL = new javax.swing.JLabel();
+        Classic_IMG = new org.edisoncor.gui.button.ButtonIcon();
+        Cheddarcon_LBL = new javax.swing.JLabel();
+        Cheddarcon_IMG = new org.edisoncor.gui.button.ButtonIcon();
+        Doubleef_LBL = new javax.swing.JLabel();
+        Doubleef_IMG = new org.edisoncor.gui.button.ButtonIcon();
+        Vegano_LBL = new javax.swing.JLabel();
+        Vegano_IMG = new org.edisoncor.gui.button.ButtonIcon();
+        Crook_LBL = new javax.swing.JLabel();
+        Crook_IMG = new org.edisoncor.gui.button.ButtonIcon();
+        Tower_LBL = new javax.swing.JLabel();
+        Tower_IMG = new org.edisoncor.gui.button.ButtonIcon();
+        Cola_LBL = new javax.swing.JLabel();
+        Cola_IMG = new org.edisoncor.gui.button.ButtonIcon();
+        Juice_LBL = new javax.swing.JLabel();
+        Juice_IMG = new org.edisoncor.gui.button.ButtonIcon();
+        Lanches_LBL = new javax.swing.JLabel();
+        Bebidas_LBL = new javax.swing.JLabel();
+        Extras_LBL = new javax.swing.JLabel();
+        Close_BTN = new javax.swing.JButton();
+        Fries_LBL = new javax.swing.JLabel();
+        Fries_IMG = new org.edisoncor.gui.button.ButtonIcon();
+        Chicken_LBL = new javax.swing.JLabel();
+        Chicken_IMG = new org.edisoncor.gui.button.ButtonIcon();
+        Tower_QNT = new javax.swing.JLabel();
+        Classic_QNT = new javax.swing.JLabel();
+        Vegano_QNT = new javax.swing.JLabel();
+        Cola_QNT = new javax.swing.JLabel();
+        Fries_QNT = new javax.swing.JLabel();
+        Chicken_QNT = new javax.swing.JLabel();
+        Juice_QNT = new javax.swing.JLabel();
+        Crook_QNT = new javax.swing.JLabel();
+        Cheddarcon_QNT = new javax.swing.JLabel();
+        Doubleef_QNT = new javax.swing.JLabel();
+        Effect_BTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        Fundo.setBackground(new java.awt.Color(102, 102, 102));
-        Fundo.setLayout(null);
+        Background.setBackground(new java.awt.Color(102, 102, 102));
+        Background.setLayout(null);
 
-        panelImage2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/MK Label.png"))); // NOI18N
+        Banner_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/MK Label.png"))); // NOI18N
 
-        javax.swing.GroupLayout panelImage2Layout = new javax.swing.GroupLayout(panelImage2);
-        panelImage2.setLayout(panelImage2Layout);
-        panelImage2Layout.setHorizontalGroup(
-            panelImage2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout Banner_IMGLayout = new javax.swing.GroupLayout(Banner_IMG);
+        Banner_IMG.setLayout(Banner_IMGLayout);
+        Banner_IMGLayout.setHorizontalGroup(
+            Banner_IMGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 480, Short.MAX_VALUE)
         );
-        panelImage2Layout.setVerticalGroup(
-            panelImage2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        Banner_IMGLayout.setVerticalGroup(
+            Banner_IMGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 110, Short.MAX_VALUE)
         );
 
-        Fundo.add(panelImage2);
-        panelImage2.setBounds(10, 0, 480, 110);
+        Background.add(Banner_IMG);
+        Banner_IMG.setBounds(10, 0, 480, 110);
 
-        buttonIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Classico.png"))); // NOI18N
-        buttonIcon1.setText("buttonIcon1");
-        Fundo.add(buttonIcon1);
-        buttonIcon1.setBounds(20, 170, 70, 60);
+        Classic_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Classic_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Classic_LBL.setText("Clássico R$ 10.50");
+        Background.add(Classic_LBL);
+        Classic_LBL.setBounds(20, 150, 100, 14);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Clássico R$ 10.50");
-        Fundo.add(jLabel1);
-        jLabel1.setBounds(20, 150, 100, 14);
+        Classic_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Classico.png"))); // NOI18N
+        Classic_IMG.setText("buttonIcon1");
+        Background.add(Classic_IMG);
+        Classic_IMG.setBounds(20, 170, 70, 60);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Cheddarcon R$ 15.50");
-        Fundo.add(jLabel2);
-        jLabel2.setBounds(20, 260, 110, 14);
+        Cheddarcon_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Cheddarcon_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Cheddarcon_LBL.setText("Cheddarcon R$ 15.50");
+        Background.add(Cheddarcon_LBL);
+        Cheddarcon_LBL.setBounds(20, 260, 110, 14);
 
-        buttonIcon2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Bacon c Cheddar.png"))); // NOI18N
-        buttonIcon2.setText("buttonIcon1");
-        Fundo.add(buttonIcon2);
-        buttonIcon2.setBounds(20, 280, 70, 60);
+        Cheddarcon_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Bacon c Cheddar.png"))); // NOI18N
+        Cheddarcon_IMG.setText("buttonIcon1");
+        Background.add(Cheddarcon_IMG);
+        Cheddarcon_IMG.setBounds(20, 280, 70, 60);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Doubleef R$ 18.50");
-        Fundo.add(jLabel3);
-        jLabel3.setBounds(20, 370, 100, 14);
+        Doubleef_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Doubleef_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Doubleef_LBL.setText("Doubleef R$ 18.50");
+        Background.add(Doubleef_LBL);
+        Doubleef_LBL.setBounds(20, 370, 100, 14);
 
-        buttonIcon3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Duas Carnes.png"))); // NOI18N
-        buttonIcon3.setText("buttonIcon1");
-        Fundo.add(buttonIcon3);
-        buttonIcon3.setBounds(20, 390, 70, 60);
+        Doubleef_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Duas Carnes.png"))); // NOI18N
+        Doubleef_IMG.setText("buttonIcon1");
+        Background.add(Doubleef_IMG);
+        Doubleef_IMG.setBounds(20, 390, 70, 60);
 
-        buttonIcon4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Vegano.png"))); // NOI18N
-        buttonIcon4.setText("buttonIcon1");
-        Fundo.add(buttonIcon4);
-        buttonIcon4.setBounds(140, 170, 70, 60);
+        Vegano_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Vegano_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Vegano_LBL.setText("Vegano R$ 20.00");
+        Background.add(Vegano_LBL);
+        Vegano_LBL.setBounds(140, 150, 90, 14);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Vegano R$ 20.00");
-        Fundo.add(jLabel4);
-        jLabel4.setBounds(140, 150, 90, 14);
+        Vegano_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Vegano.png"))); // NOI18N
+        Vegano_IMG.setText("buttonIcon1");
+        Background.add(Vegano_IMG);
+        Vegano_IMG.setBounds(140, 170, 70, 60);
 
-        buttonIcon5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Recheado.png"))); // NOI18N
-        buttonIcon5.setText("buttonIcon1");
-        Fundo.add(buttonIcon5);
-        buttonIcon5.setBounds(140, 280, 70, 60);
+        Crook_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Crook_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Crook_LBL.setText("Crook R$ 17.30");
+        Background.add(Crook_LBL);
+        Crook_LBL.setBounds(140, 260, 100, 14);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Crook R$ 17.30");
-        Fundo.add(jLabel5);
-        jLabel5.setBounds(140, 260, 100, 14);
+        Crook_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Recheado.png"))); // NOI18N
+        Crook_IMG.setText("buttonIcon1");
+        Background.add(Crook_IMG);
+        Crook_IMG.setBounds(140, 280, 70, 60);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Tower R$ 25.00");
-        Fundo.add(jLabel6);
-        jLabel6.setBounds(140, 370, 90, 14);
+        Tower_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Tower_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Tower_LBL.setText("Tower R$ 25.00");
+        Background.add(Tower_LBL);
+        Tower_LBL.setBounds(140, 370, 90, 14);
 
-        buttonIcon6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Tower.png"))); // NOI18N
-        buttonIcon6.setText("buttonIcon1");
-        Fundo.add(buttonIcon6);
-        buttonIcon6.setBounds(140, 390, 70, 60);
+        Tower_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Tower.png"))); // NOI18N
+        Tower_IMG.setText("buttonIcon1");
+        Background.add(Tower_IMG);
+        Tower_IMG.setBounds(140, 390, 70, 60);
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Coca-Cola 750ml R$ 5.00");
-        Fundo.add(jLabel7);
-        jLabel7.setBounds(250, 150, 130, 14);
+        Cola_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Cola_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Cola_LBL.setText("Coca-Cola 750ml R$ 5.00");
+        Background.add(Cola_LBL);
+        Cola_LBL.setBounds(250, 150, 130, 14);
 
-        buttonIcon7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/CocaCola.png"))); // NOI18N
-        buttonIcon7.setText("buttonIcon1");
-        Fundo.add(buttonIcon7);
-        buttonIcon7.setBounds(250, 170, 70, 60);
+        Cola_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/CocaCola.png"))); // NOI18N
+        Cola_IMG.setText("buttonIcon1");
+        Background.add(Cola_IMG);
+        Cola_IMG.setBounds(250, 170, 70, 60);
 
-        buttonIcon8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Suco.png"))); // NOI18N
-        buttonIcon8.setText("buttonIcon1");
-        Fundo.add(buttonIcon8);
-        buttonIcon8.setBounds(250, 280, 70, 60);
+        Juice_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Juice_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Juice_LBL.setText("Suco Natural 500ml R$ 3.50");
+        Background.add(Juice_LBL);
+        Juice_LBL.setBounds(250, 260, 140, 14);
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Suco Natural 500ml R$ 3.50");
-        Fundo.add(jLabel8);
-        jLabel8.setBounds(250, 260, 140, 14);
+        Juice_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Suco.png"))); // NOI18N
+        Juice_IMG.setText("buttonIcon1");
+        Background.add(Juice_IMG);
+        Juice_IMG.setBounds(250, 280, 70, 60);
 
-        jLabel10.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Bebidas");
-        Fundo.add(jLabel10);
-        jLabel10.setBounds(240, 120, 90, 22);
+        Lanches_LBL.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        Lanches_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Lanches_LBL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Lanches_LBL.setText("Lanches");
+        Background.add(Lanches_LBL);
+        Lanches_LBL.setBounds(20, 120, 190, 22);
 
-        jLabel11.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("Lanches");
-        Fundo.add(jLabel11);
-        jLabel11.setBounds(20, 120, 190, 22);
+        Bebidas_LBL.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        Bebidas_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Bebidas_LBL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Bebidas_LBL.setText("Bebidas");
+        Background.add(Bebidas_LBL);
+        Bebidas_LBL.setBounds(240, 120, 90, 22);
 
-        jButton3.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("X");
-        jButton3.setBorderPainted(false);
-        jButton3.setContentAreaFilled(false);
-        jButton3.setFocusable(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        Extras_LBL.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        Extras_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Extras_LBL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Extras_LBL.setText("Extras");
+        Background.add(Extras_LBL);
+        Extras_LBL.setBounds(380, 120, 90, 22);
+
+        Close_BTN.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        Close_BTN.setForeground(new java.awt.Color(255, 255, 255));
+        Close_BTN.setText("X");
+        Close_BTN.setBorderPainted(false);
+        Close_BTN.setContentAreaFilled(false);
+        Close_BTN.setFocusable(false);
+        Close_BTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                Close_BTNActionPerformed(evt);
             }
         });
-        Fundo.add(jButton3);
-        jButton3.setBounds(490, 10, 50, 30);
+        Background.add(Close_BTN);
+        Close_BTN.setBounds(490, 10, 50, 30);
 
-        jLabel12.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("Extras");
-        Fundo.add(jLabel12);
-        jLabel12.setBounds(380, 120, 90, 22);
+        Fries_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Fries_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Fries_LBL.setText("Batata-Frita 250g R$ 5.00");
+        Background.add(Fries_LBL);
+        Fries_LBL.setBounds(390, 150, 140, 14);
 
-        jLabel13.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Batata-Frita 250g R$ 5.00");
-        Fundo.add(jLabel13);
-        jLabel13.setBounds(390, 150, 140, 14);
+        Fries_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/BatataFrita.png"))); // NOI18N
+        Fries_IMG.setText("buttonIcon1");
+        Background.add(Fries_IMG);
+        Fries_IMG.setBounds(390, 170, 70, 60);
 
-        buttonIcon10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/BatataFrita.png"))); // NOI18N
-        buttonIcon10.setText("buttonIcon1");
-        Fundo.add(buttonIcon10);
-        buttonIcon10.setBounds(390, 170, 70, 60);
+        Chicken_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Chicken_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Chicken_LBL.setText("Nuggets 250g R$ 6.50");
+        Background.add(Chicken_LBL);
+        Chicken_LBL.setBounds(390, 260, 130, 14);
 
-        jLabel14.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("Nuggets 250g R$ 6.50");
-        Fundo.add(jLabel14);
-        jLabel14.setBounds(390, 260, 130, 14);
+        Chicken_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Nuggets.png"))); // NOI18N
+        Chicken_IMG.setText("buttonIcon1");
+        Background.add(Chicken_IMG);
+        Chicken_IMG.setBounds(390, 280, 70, 60);
 
-        buttonIcon11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Nuggets.png"))); // NOI18N
-        buttonIcon11.setText("buttonIcon1");
-        Fundo.add(buttonIcon11);
-        buttonIcon11.setBounds(390, 280, 70, 60);
+        Tower_QNT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Tower_QNT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Tower_QNT.setText("0");
+        Background.add(Tower_QNT);
+        Tower_QNT.setBounds(140, 450, 70, 30);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("0");
-        Fundo.add(jLabel9);
-        jLabel9.setBounds(140, 450, 70, 30);
+        Classic_QNT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Classic_QNT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Classic_QNT.setText("0");
+        Background.add(Classic_QNT);
+        Classic_QNT.setBounds(20, 230, 70, 30);
 
-        jLabel15.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setText("0");
-        Fundo.add(jLabel15);
-        jLabel15.setBounds(20, 230, 70, 30);
+        Vegano_QNT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Vegano_QNT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Vegano_QNT.setText("0");
+        Background.add(Vegano_QNT);
+        Vegano_QNT.setBounds(140, 230, 70, 30);
 
-        jLabel16.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel16.setText("0");
-        Fundo.add(jLabel16);
-        jLabel16.setBounds(140, 230, 70, 30);
+        Cola_QNT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Cola_QNT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Cola_QNT.setText("0");
+        Background.add(Cola_QNT);
+        Cola_QNT.setBounds(250, 230, 70, 30);
 
-        jLabel17.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel17.setText("0");
-        Fundo.add(jLabel17);
-        jLabel17.setBounds(250, 230, 70, 30);
+        Fries_QNT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Fries_QNT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Fries_QNT.setText("0");
+        Background.add(Fries_QNT);
+        Fries_QNT.setBounds(390, 230, 70, 30);
 
-        jLabel18.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel18.setText("0");
-        Fundo.add(jLabel18);
-        jLabel18.setBounds(390, 230, 70, 30);
+        Chicken_QNT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Chicken_QNT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Chicken_QNT.setText("0");
+        Background.add(Chicken_QNT);
+        Chicken_QNT.setBounds(390, 340, 70, 30);
 
-        jLabel19.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel19.setText("0");
-        Fundo.add(jLabel19);
-        jLabel19.setBounds(390, 340, 70, 30);
+        Juice_QNT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Juice_QNT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Juice_QNT.setText("0");
+        Background.add(Juice_QNT);
+        Juice_QNT.setBounds(250, 340, 70, 30);
 
-        jLabel20.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel20.setText("0");
-        Fundo.add(jLabel20);
-        jLabel20.setBounds(250, 340, 70, 30);
+        Crook_QNT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Crook_QNT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Crook_QNT.setText("0");
+        Background.add(Crook_QNT);
+        Crook_QNT.setBounds(140, 340, 70, 30);
 
-        jLabel21.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel21.setText("0");
-        Fundo.add(jLabel21);
-        jLabel21.setBounds(140, 340, 70, 30);
+        Cheddarcon_QNT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Cheddarcon_QNT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Cheddarcon_QNT.setText("0");
+        Background.add(Cheddarcon_QNT);
+        Cheddarcon_QNT.setBounds(20, 340, 70, 30);
 
-        jLabel22.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel22.setText("0");
-        Fundo.add(jLabel22);
-        jLabel22.setBounds(20, 340, 70, 30);
+        Doubleef_QNT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Doubleef_QNT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Doubleef_QNT.setText("0");
+        Background.add(Doubleef_QNT);
+        Doubleef_QNT.setBounds(20, 450, 70, 30);
 
-        jLabel23.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("0");
-        Fundo.add(jLabel23);
-        jLabel23.setBounds(20, 450, 70, 30);
-
-        jButton4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jButton4.setText("Fechar Pedido");
-        Fundo.add(jButton4);
-        jButton4.setBounds(290, 400, 150, 40);
+        Effect_BTN.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        Effect_BTN.setText("Efetuar Pedido");
+        Effect_BTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Effect_BTNActionPerformed(evt);
+            }
+        });
+        Background.add(Effect_BTN);
+        Effect_BTN.setBounds(290, 400, 150, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Fundo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Fundo, javax.swing.GroupLayout.DEFAULT_SIZE, 482, Short.MAX_VALUE)
+            .addComponent(Background, javax.swing.GroupLayout.DEFAULT_SIZE, 482, Short.MAX_VALUE)
         );
 
         setSize(new java.awt.Dimension(539, 482));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void Close_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Close_BTNActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_Close_BTNActionPerformed
+
+    private void Effect_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Effect_BTNActionPerformed
+        new Pagamento_GUI().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Effect_BTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -352,44 +362,42 @@ public class Pedido_GUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel Fundo;
-    private org.edisoncor.gui.button.ButtonIcon buttonIcon1;
-    private org.edisoncor.gui.button.ButtonIcon buttonIcon10;
-    private org.edisoncor.gui.button.ButtonIcon buttonIcon11;
-    private org.edisoncor.gui.button.ButtonIcon buttonIcon2;
-    private org.edisoncor.gui.button.ButtonIcon buttonIcon3;
-    private org.edisoncor.gui.button.ButtonIcon buttonIcon4;
-    private org.edisoncor.gui.button.ButtonIcon buttonIcon5;
-    private org.edisoncor.gui.button.ButtonIcon buttonIcon6;
-    private org.edisoncor.gui.button.ButtonIcon buttonIcon7;
-    private org.edisoncor.gui.button.ButtonIcon buttonIcon8;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private org.edisoncor.gui.panel.PanelImage panelImage2;
+    private javax.swing.JPanel Background;
+    private org.edisoncor.gui.panel.PanelImage Banner_IMG;
+    private javax.swing.JLabel Bebidas_LBL;
+    private org.edisoncor.gui.button.ButtonIcon Cheddarcon_IMG;
+    private javax.swing.JLabel Cheddarcon_LBL;
+    private javax.swing.JLabel Cheddarcon_QNT;
+    private org.edisoncor.gui.button.ButtonIcon Chicken_IMG;
+    private javax.swing.JLabel Chicken_LBL;
+    private javax.swing.JLabel Chicken_QNT;
+    private org.edisoncor.gui.button.ButtonIcon Classic_IMG;
+    private javax.swing.JLabel Classic_LBL;
+    private javax.swing.JLabel Classic_QNT;
+    private javax.swing.JButton Close_BTN;
+    private org.edisoncor.gui.button.ButtonIcon Cola_IMG;
+    private javax.swing.JLabel Cola_LBL;
+    private javax.swing.JLabel Cola_QNT;
+    private org.edisoncor.gui.button.ButtonIcon Crook_IMG;
+    private javax.swing.JLabel Crook_LBL;
+    private javax.swing.JLabel Crook_QNT;
+    private org.edisoncor.gui.button.ButtonIcon Doubleef_IMG;
+    private javax.swing.JLabel Doubleef_LBL;
+    private javax.swing.JLabel Doubleef_QNT;
+    private javax.swing.JButton Effect_BTN;
+    private javax.swing.JLabel Extras_LBL;
+    private org.edisoncor.gui.button.ButtonIcon Fries_IMG;
+    private javax.swing.JLabel Fries_LBL;
+    private javax.swing.JLabel Fries_QNT;
+    private org.edisoncor.gui.button.ButtonIcon Juice_IMG;
+    private javax.swing.JLabel Juice_LBL;
+    private javax.swing.JLabel Juice_QNT;
+    private javax.swing.JLabel Lanches_LBL;
+    private org.edisoncor.gui.button.ButtonIcon Tower_IMG;
+    private javax.swing.JLabel Tower_LBL;
+    private javax.swing.JLabel Tower_QNT;
+    private org.edisoncor.gui.button.ButtonIcon Vegano_IMG;
+    private javax.swing.JLabel Vegano_LBL;
+    private javax.swing.JLabel Vegano_QNT;
     // End of variables declaration//GEN-END:variables
 }
