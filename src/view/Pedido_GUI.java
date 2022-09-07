@@ -64,6 +64,8 @@ public class Pedido_GUI extends javax.swing.JFrame {
         Cheddarcon_QNT = new javax.swing.JLabel();
         Doubleef_QNT = new javax.swing.JLabel();
         Effect_BTN = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -300,7 +302,19 @@ public class Pedido_GUI extends javax.swing.JFrame {
             }
         });
         Background.add(Effect_BTN);
-        Effect_BTN.setBounds(290, 400, 150, 40);
+        Effect_BTN.setBounds(290, 430, 150, 40);
+
+        jTextField1.setEditable(false);
+        jTextField1.setText("R$ 0.00");
+        Background.add(jTextField1);
+        jTextField1.setBounds(290, 400, 150, 20);
+
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Valor Total");
+        Background.add(jLabel1);
+        jLabel1.setBounds(290, 380, 150, 14);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -367,37 +381,39 @@ public class Pedido_GUI extends javax.swing.JFrame {
     private javax.swing.JLabel Bebidas_LBL;
     private org.edisoncor.gui.button.ButtonIcon Cheddarcon_IMG;
     private javax.swing.JLabel Cheddarcon_LBL;
-    private javax.swing.JLabel Cheddarcon_QNT;
+    public static javax.swing.JLabel Cheddarcon_QNT;
     private org.edisoncor.gui.button.ButtonIcon Chicken_IMG;
     private javax.swing.JLabel Chicken_LBL;
-    private javax.swing.JLabel Chicken_QNT;
+    public static javax.swing.JLabel Chicken_QNT;
     private org.edisoncor.gui.button.ButtonIcon Classic_IMG;
     private javax.swing.JLabel Classic_LBL;
-    private javax.swing.JLabel Classic_QNT;
+    public static javax.swing.JLabel Classic_QNT;
     private javax.swing.JButton Close_BTN;
     private org.edisoncor.gui.button.ButtonIcon Cola_IMG;
     private javax.swing.JLabel Cola_LBL;
-    private javax.swing.JLabel Cola_QNT;
+    public static javax.swing.JLabel Cola_QNT;
     private org.edisoncor.gui.button.ButtonIcon Crook_IMG;
     private javax.swing.JLabel Crook_LBL;
-    private javax.swing.JLabel Crook_QNT;
+    public static javax.swing.JLabel Crook_QNT;
     private org.edisoncor.gui.button.ButtonIcon Doubleef_IMG;
     private javax.swing.JLabel Doubleef_LBL;
-    private javax.swing.JLabel Doubleef_QNT;
+    public static javax.swing.JLabel Doubleef_QNT;
     private javax.swing.JButton Effect_BTN;
     private javax.swing.JLabel Extras_LBL;
     private org.edisoncor.gui.button.ButtonIcon Fries_IMG;
     private javax.swing.JLabel Fries_LBL;
-    private javax.swing.JLabel Fries_QNT;
+    public static javax.swing.JLabel Fries_QNT;
     private org.edisoncor.gui.button.ButtonIcon Juice_IMG;
     private javax.swing.JLabel Juice_LBL;
-    private javax.swing.JLabel Juice_QNT;
+    public static javax.swing.JLabel Juice_QNT;
     private javax.swing.JLabel Lanches_LBL;
     private org.edisoncor.gui.button.ButtonIcon Tower_IMG;
     private javax.swing.JLabel Tower_LBL;
-    private javax.swing.JLabel Tower_QNT;
+    public static javax.swing.JLabel Tower_QNT;
     private org.edisoncor.gui.button.ButtonIcon Vegano_IMG;
     private javax.swing.JLabel Vegano_LBL;
-    private javax.swing.JLabel Vegano_QNT;
+    public static javax.swing.JLabel Vegano_QNT;
+    private javax.swing.JLabel jLabel1;
+    public static javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

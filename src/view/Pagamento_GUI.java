@@ -42,23 +42,24 @@ public class Pagamento_GUI extends javax.swing.JFrame {
         Info_LBL = new javax.swing.JLabel();
         InfoPayment_LBL = new javax.swing.JLabel();
         Methods_PNL = new javax.swing.JPanel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
+        CartaoDeCredito_RBT = new javax.swing.JRadioButton();
+        Pix_RBT = new javax.swing.JRadioButton();
+        Dinheiro_RBT = new javax.swing.JRadioButton();
         Panel_PIX_PNL = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jLabel1 = new javax.swing.JLabel();
-        panelImage1 = new org.edisoncor.gui.panel.PanelImage();
-        jLabel2 = new javax.swing.JLabel();
+        ChavePix_TXT = new javax.swing.JScrollPane();
+        ChavePix_JXT = new javax.swing.JTextArea();
+        ChavePix_LBL = new javax.swing.JLabel();
+        Pix_QR_IMG = new org.edisoncor.gui.panel.PanelImage();
+        QR_Code_LBL = new javax.swing.JLabel();
         Panel_Credit_PNL = new javax.swing.JPanel();
-        jTextField4 = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
+        Numero_JTF = new javax.swing.JTextField();
+        Numero_LBL = new javax.swing.JLabel();
+        Titular_JTF = new javax.swing.JTextField();
+        Titular_LBL = new javax.swing.JLabel();
+        CVV_JTF = new javax.swing.JTextField();
+        CVV_LBL = new javax.swing.JLabel();
+        D_Vencimento_JTF = new javax.swing.JTextField();
+        D_Vencimento_LBL = new javax.swing.JLabel();
         Effect_Payment_BTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -144,13 +145,32 @@ public class Pagamento_GUI extends javax.swing.JFrame {
         Methods_PNL.setBackground(new java.awt.Color(153, 153, 153));
         Methods_PNL.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Métodos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 11), new java.awt.Color(255, 255, 255))); // NOI18N
 
-        PaymentMethods.add(jRadioButton1);
-        jRadioButton1.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jRadioButton1.setText("Cartão de Crédito");
+        PaymentMethods.add(CartaoDeCredito_RBT);
+        CartaoDeCredito_RBT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        CartaoDeCredito_RBT.setText("Cartão de Crédito");
+        CartaoDeCredito_RBT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CartaoDeCredito_RBTActionPerformed(evt);
+            }
+        });
 
-        PaymentMethods.add(jRadioButton2);
-        jRadioButton2.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jRadioButton2.setText("PIX");
+        PaymentMethods.add(Pix_RBT);
+        Pix_RBT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Pix_RBT.setText("PIX");
+        Pix_RBT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Pix_RBTActionPerformed(evt);
+            }
+        });
+
+        PaymentMethods.add(Dinheiro_RBT);
+        Dinheiro_RBT.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Dinheiro_RBT.setText("Dinheiro");
+        Dinheiro_RBT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Dinheiro_RBTActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Methods_PNLLayout = new javax.swing.GroupLayout(Methods_PNL);
         Methods_PNL.setLayout(Methods_PNLLayout);
@@ -158,107 +178,116 @@ public class Pagamento_GUI extends javax.swing.JFrame {
             Methods_PNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Methods_PNLLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jRadioButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jRadioButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
+                .addGroup(Methods_PNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Dinheiro_RBT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(Methods_PNLLayout.createSequentialGroup()
+                        .addComponent(CartaoDeCredito_RBT)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Pix_RBT, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         Methods_PNLLayout.setVerticalGroup(
             Methods_PNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Methods_PNLLayout.createSequentialGroup()
                 .addGroup(Methods_PNLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2))
-                .addGap(0, 4, Short.MAX_VALUE))
+                    .addComponent(CartaoDeCredito_RBT)
+                    .addComponent(Pix_RBT))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 1, Short.MAX_VALUE)
+                .addComponent(Dinheiro_RBT))
         );
 
         Background.add(Methods_PNL);
-        Methods_PNL.setBounds(270, 170, 240, 50);
+        Methods_PNL.setBounds(270, 170, 240, 70);
 
         Panel_PIX_PNL.setLayout(null);
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        ChavePix_JXT.setEditable(false);
+        ChavePix_JXT.setColumns(20);
+        ChavePix_JXT.setRows(5);
+        ChavePix_TXT.setViewportView(ChavePix_JXT);
 
-        Panel_PIX_PNL.add(jScrollPane1);
-        jScrollPane1.setBounds(10, 26, 130, 110);
+        Panel_PIX_PNL.add(ChavePix_TXT);
+        ChavePix_TXT.setBounds(10, 26, 130, 110);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel1.setText("Chave PIX");
-        Panel_PIX_PNL.add(jLabel1);
-        jLabel1.setBounds(10, 10, 130, 14);
+        ChavePix_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        ChavePix_LBL.setText("Chave PIX");
+        Panel_PIX_PNL.add(ChavePix_LBL);
+        ChavePix_LBL.setBounds(10, 10, 130, 14);
 
-        panelImage1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/QR Code.png"))); // NOI18N
+        Pix_QR_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/QR Code.png"))); // NOI18N
 
-        javax.swing.GroupLayout panelImage1Layout = new javax.swing.GroupLayout(panelImage1);
-        panelImage1.setLayout(panelImage1Layout);
-        panelImage1Layout.setHorizontalGroup(
-            panelImage1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout Pix_QR_IMGLayout = new javax.swing.GroupLayout(Pix_QR_IMG);
+        Pix_QR_IMG.setLayout(Pix_QR_IMGLayout);
+        Pix_QR_IMGLayout.setHorizontalGroup(
+            Pix_QR_IMGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 80, Short.MAX_VALUE)
         );
-        panelImage1Layout.setVerticalGroup(
-            panelImage1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        Pix_QR_IMGLayout.setVerticalGroup(
+            Pix_QR_IMGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 80, Short.MAX_VALUE)
         );
 
-        Panel_PIX_PNL.add(panelImage1);
-        panelImage1.setBounds(150, 50, 80, 80);
+        Panel_PIX_PNL.add(Pix_QR_IMG);
+        Pix_QR_IMG.setBounds(150, 50, 80, 80);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel2.setText("Código QR");
-        Panel_PIX_PNL.add(jLabel2);
-        jLabel2.setBounds(150, 30, 80, 14);
+        QR_Code_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        QR_Code_LBL.setText("Código QR");
+        Panel_PIX_PNL.add(QR_Code_LBL);
+        QR_Code_LBL.setBounds(150, 30, 80, 14);
 
         Background.add(Panel_PIX_PNL);
-        Panel_PIX_PNL.setBounds(270, 230, 240, 150);
+        Panel_PIX_PNL.setBounds(270, 250, 240, 150);
 
         Panel_Credit_PNL.setLayout(null);
 
-        jTextField4.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        Panel_Credit_PNL.add(jTextField4);
-        jTextField4.setBounds(10, 31, 220, 20);
+        Numero_JTF.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Panel_Credit_PNL.add(Numero_JTF);
+        Numero_JTF.setBounds(10, 31, 220, 20);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel6.setText("Número do Cartão");
-        Panel_Credit_PNL.add(jLabel6);
-        jLabel6.setBounds(10, 11, 87, 14);
+        Numero_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Numero_LBL.setText("Número do Cartão");
+        Panel_Credit_PNL.add(Numero_LBL);
+        Numero_LBL.setBounds(10, 11, 87, 14);
 
-        jTextField5.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        Panel_Credit_PNL.add(jTextField5);
-        jTextField5.setBounds(10, 77, 220, 20);
+        Titular_JTF.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Panel_Credit_PNL.add(Titular_JTF);
+        Titular_JTF.setBounds(10, 77, 220, 20);
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel7.setText("Nome do(a) Titular");
-        Panel_Credit_PNL.add(jLabel7);
-        jLabel7.setBounds(10, 57, 88, 14);
+        Titular_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Titular_LBL.setText("Nome do(a) Titular");
+        Panel_Credit_PNL.add(Titular_LBL);
+        Titular_LBL.setBounds(10, 57, 88, 14);
 
-        jTextField6.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        Panel_Credit_PNL.add(jTextField6);
-        jTextField6.setBounds(10, 123, 80, 20);
+        CVV_JTF.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Panel_Credit_PNL.add(CVV_JTF);
+        CVV_JTF.setBounds(10, 123, 80, 20);
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel8.setText("CVV");
-        Panel_Credit_PNL.add(jLabel8);
-        jLabel8.setBounds(10, 103, 50, 14);
+        CVV_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        CVV_LBL.setText("CVV");
+        Panel_Credit_PNL.add(CVV_LBL);
+        CVV_LBL.setBounds(10, 103, 50, 14);
 
-        jTextField7.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        Panel_Credit_PNL.add(jTextField7);
-        jTextField7.setBounds(100, 123, 130, 20);
+        D_Vencimento_JTF.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Panel_Credit_PNL.add(D_Vencimento_JTF);
+        D_Vencimento_JTF.setBounds(100, 123, 130, 20);
 
-        jLabel9.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        jLabel9.setText("Data de Vencimento");
-        Panel_Credit_PNL.add(jLabel9);
-        jLabel9.setBounds(103, 103, 130, 14);
+        D_Vencimento_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        D_Vencimento_LBL.setText("Data de Vencimento");
+        Panel_Credit_PNL.add(D_Vencimento_LBL);
+        D_Vencimento_LBL.setBounds(103, 103, 130, 14);
 
         Background.add(Panel_Credit_PNL);
-        Panel_Credit_PNL.setBounds(270, 230, 240, 150);
+        Panel_Credit_PNL.setBounds(270, 250, 240, 150);
 
         Effect_Payment_BTN.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         Effect_Payment_BTN.setText("Efetuar Pagamento");
+        Effect_Payment_BTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Effect_Payment_BTNActionPerformed(evt);
+            }
+        });
         Background.add(Effect_Payment_BTN);
-        Effect_Payment_BTN.setBounds(270, 390, 240, 30);
+        Effect_Payment_BTN.setBounds(270, 410, 240, 30);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -278,6 +307,26 @@ public class Pagamento_GUI extends javax.swing.JFrame {
     private void Close_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Close_BTNActionPerformed
         System.exit(0);
     }//GEN-LAST:event_Close_BTNActionPerformed
+
+    private void Effect_Payment_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Effect_Payment_BTNActionPerformed
+        new NF_GUI().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Effect_Payment_BTNActionPerformed
+
+    private void CartaoDeCredito_RBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CartaoDeCredito_RBTActionPerformed
+        Panel_Credit_PNL.setVisible(true);
+        Panel_PIX_PNL.setVisible(false);
+    }//GEN-LAST:event_CartaoDeCredito_RBTActionPerformed
+
+    private void Pix_RBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pix_RBTActionPerformed
+        Panel_Credit_PNL.setVisible(false);
+        Panel_PIX_PNL.setVisible(true);
+    }//GEN-LAST:event_Pix_RBTActionPerformed
+
+    private void Dinheiro_RBTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Dinheiro_RBTActionPerformed
+        Panel_Credit_PNL.setVisible(false);
+        Panel_PIX_PNL.setVisible(false);
+    }//GEN-LAST:event_Dinheiro_RBTActionPerformed
 
     /**
      * @param args the command line arguments
@@ -318,33 +367,34 @@ public class Pagamento_GUI extends javax.swing.JFrame {
     private javax.swing.JPanel Background;
     private org.edisoncor.gui.panel.PanelImage Banner_IMG;
     private javax.swing.JLabel CPF_LBL;
-    private javax.swing.JTextField CPF_TXF;
+    public static javax.swing.JTextField CPF_TXF;
+    public static javax.swing.JTextField CVV_JTF;
+    private javax.swing.JLabel CVV_LBL;
+    public static javax.swing.JRadioButton CartaoDeCredito_RBT;
+    public static javax.swing.JTextArea ChavePix_JXT;
+    private javax.swing.JLabel ChavePix_LBL;
+    private javax.swing.JScrollPane ChavePix_TXT;
     private javax.swing.JButton Close_BTN;
-    private javax.swing.JTextField Contact_JTF;
+    public static javax.swing.JTextField Contact_JTF;
     private javax.swing.JLabel Contact_LBL;
+    public static javax.swing.JTextField D_Vencimento_JTF;
+    private javax.swing.JLabel D_Vencimento_LBL;
+    public static javax.swing.JRadioButton Dinheiro_RBT;
     private javax.swing.JButton Effect_Payment_BTN;
     private javax.swing.JLabel InfoPayment_LBL;
     private javax.swing.JLabel Info_LBL;
     private javax.swing.JPanel Methods_PNL;
     private javax.swing.JLabel Name_LBL;
-    private javax.swing.JTextField Nome_TXF;
+    public static javax.swing.JTextField Nome_TXF;
+    public static javax.swing.JTextField Numero_JTF;
+    private javax.swing.JLabel Numero_LBL;
     private javax.swing.JPanel Panel_Credit_PNL;
     private javax.swing.JPanel Panel_PIX_PNL;
     private javax.swing.ButtonGroup PaymentMethods;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private org.edisoncor.gui.panel.PanelImage panelImage1;
+    private org.edisoncor.gui.panel.PanelImage Pix_QR_IMG;
+    public static javax.swing.JRadioButton Pix_RBT;
+    private javax.swing.JLabel QR_Code_LBL;
+    public static javax.swing.JTextField Titular_JTF;
+    private javax.swing.JLabel Titular_LBL;
     // End of variables declaration//GEN-END:variables
 }
