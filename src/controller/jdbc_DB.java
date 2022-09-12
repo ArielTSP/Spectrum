@@ -15,6 +15,5 @@ public class jdbc_DB {
     public static int suco = 7500; // Mililitro
     public static int batata_frita = 3750; // Gramas
     public static int nuggets = 3750; // Gramas
-
     
 }
