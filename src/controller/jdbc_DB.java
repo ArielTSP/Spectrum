@@ -9,6 +9,7 @@ public class jdbc_DB {
     public static int pao_vegano = 300; // Gramas 50g
     public static int carne = 1500; // Gramas 100g
     public static int carne_vegana = 1500; // Gramas 100g
+    public static int cheddar = 900; // Gramas 30g
     public static int bacon = 180; // Gramas 20g
     public static int tomate = 1635; // Gramas (109g) /5 - 22g
     public static int cebola = 1680; // Gramas (112g) /5 - 22g
