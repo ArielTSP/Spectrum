@@ -66,6 +66,8 @@ public class Pedido_GUI extends javax.swing.JFrame {
         Effect_BTN = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        ValorTotal_JTF = new javax.swing.JTextField();
+        ValorTotal_LBL = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -97,6 +99,11 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Classic_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Classico.png"))); // NOI18N
         Classic_IMG.setText("buttonIcon1");
+        Classic_IMG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Classic_IMGActionPerformed(evt);
+            }
+        });
         Background.add(Classic_IMG);
         Classic_IMG.setBounds(20, 170, 70, 60);
 
@@ -108,6 +115,11 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Cheddarcon_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Bacon c Cheddar.png"))); // NOI18N
         Cheddarcon_IMG.setText("buttonIcon1");
+        Cheddarcon_IMG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Cheddarcon_IMGActionPerformed(evt);
+            }
+        });
         Background.add(Cheddarcon_IMG);
         Cheddarcon_IMG.setBounds(20, 280, 70, 60);
 
@@ -119,6 +131,11 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Doubleef_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Duas Carnes.png"))); // NOI18N
         Doubleef_IMG.setText("buttonIcon1");
+        Doubleef_IMG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Doubleef_IMGActionPerformed(evt);
+            }
+        });
         Background.add(Doubleef_IMG);
         Doubleef_IMG.setBounds(20, 390, 70, 60);
 
@@ -130,6 +147,11 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Vegano_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Vegano.png"))); // NOI18N
         Vegano_IMG.setText("buttonIcon1");
+        Vegano_IMG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Vegano_IMGActionPerformed(evt);
+            }
+        });
         Background.add(Vegano_IMG);
         Vegano_IMG.setBounds(140, 170, 70, 60);
 
@@ -141,6 +163,11 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Crook_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Recheado.png"))); // NOI18N
         Crook_IMG.setText("buttonIcon1");
+        Crook_IMG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Crook_IMGActionPerformed(evt);
+            }
+        });
         Background.add(Crook_IMG);
         Crook_IMG.setBounds(140, 280, 70, 60);
 
@@ -152,6 +179,11 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Tower_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Tower.png"))); // NOI18N
         Tower_IMG.setText("buttonIcon1");
+        Tower_IMG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Tower_IMGActionPerformed(evt);
+            }
+        });
         Background.add(Tower_IMG);
         Tower_IMG.setBounds(140, 390, 70, 60);
 
@@ -163,6 +195,11 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Cola_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/CocaCola.png"))); // NOI18N
         Cola_IMG.setText("buttonIcon1");
+        Cola_IMG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Cola_IMGActionPerformed(evt);
+            }
+        });
         Background.add(Cola_IMG);
         Cola_IMG.setBounds(250, 170, 70, 60);
 
@@ -174,6 +211,11 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Juice_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Suco.png"))); // NOI18N
         Juice_IMG.setText("buttonIcon1");
+        Juice_IMG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Juice_IMGActionPerformed(evt);
+            }
+        });
         Background.add(Juice_IMG);
         Juice_IMG.setBounds(250, 280, 70, 60);
 
@@ -220,6 +262,11 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Fries_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/BatataFrita.png"))); // NOI18N
         Fries_IMG.setText("buttonIcon1");
+        Fries_IMG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Fries_IMGActionPerformed(evt);
+            }
+        });
         Background.add(Fries_IMG);
         Fries_IMG.setBounds(390, 170, 70, 60);
 
@@ -231,6 +278,11 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Chicken_IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Nuggets.png"))); // NOI18N
         Chicken_IMG.setText("buttonIcon1");
+        Chicken_IMG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Chicken_IMGActionPerformed(evt);
+            }
+        });
         Background.add(Chicken_IMG);
         Chicken_IMG.setBounds(390, 280, 70, 60);
 
@@ -315,6 +367,17 @@ public class Pedido_GUI extends javax.swing.JFrame {
         jLabel1.setText("Valor Total");
         Background.add(jLabel1);
         jLabel1.setBounds(290, 380, 150, 14);
+        ValorTotal_JTF.setEditable(false);
+        ValorTotal_JTF.setText("R$ 0.00");
+        Background.add(ValorTotal_JTF);
+        ValorTotal_JTF.setBounds(290, 400, 150, 20);
+
+        ValorTotal_LBL.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        ValorTotal_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        ValorTotal_LBL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ValorTotal_LBL.setText("Valor Total");
+        Background.add(ValorTotal_LBL);
+        ValorTotal_LBL.setBounds(290, 380, 150, 14);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -339,6 +402,46 @@ public class Pedido_GUI extends javax.swing.JFrame {
         new Pagamento_GUI().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_Effect_BTNActionPerformed
+
+    private void Classic_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Classic_IMGActionPerformed
+        model.pedido_DAO.recebaPedido(1);
+    }//GEN-LAST:event_Classic_IMGActionPerformed
+
+    private void Vegano_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Vegano_IMGActionPerformed
+        model.pedido_DAO.recebaPedido(2);
+    }//GEN-LAST:event_Vegano_IMGActionPerformed
+
+    private void Cola_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cola_IMGActionPerformed
+        model.pedido_DAO.recebaPedido(3);
+    }//GEN-LAST:event_Cola_IMGActionPerformed
+
+    private void Fries_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Fries_IMGActionPerformed
+        model.pedido_DAO.recebaPedido(4);
+    }//GEN-LAST:event_Fries_IMGActionPerformed
+
+    private void Cheddarcon_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cheddarcon_IMGActionPerformed
+        model.pedido_DAO.recebaPedido(5);
+    }//GEN-LAST:event_Cheddarcon_IMGActionPerformed
+
+    private void Crook_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Crook_IMGActionPerformed
+        model.pedido_DAO.recebaPedido(6);
+    }//GEN-LAST:event_Crook_IMGActionPerformed
+
+    private void Juice_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Juice_IMGActionPerformed
+        model.pedido_DAO.recebaPedido(7);
+    }//GEN-LAST:event_Juice_IMGActionPerformed
+
+    private void Chicken_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Chicken_IMGActionPerformed
+        model.pedido_DAO.recebaPedido(8);
+    }//GEN-LAST:event_Chicken_IMGActionPerformed
+
+    private void Doubleef_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Doubleef_IMGActionPerformed
+        model.pedido_DAO.recebaPedido(9);
+    }//GEN-LAST:event_Doubleef_IMGActionPerformed
+
+    private void Tower_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tower_IMGActionPerformed
+        model.pedido_DAO.recebaPedido(10);
+    }//GEN-LAST:event_Tower_IMGActionPerformed
 
     /**
      * @param args the command line arguments
@@ -399,6 +502,7 @@ public class Pedido_GUI extends javax.swing.JFrame {
     private javax.swing.JLabel Doubleef_LBL;
     public static javax.swing.JLabel Doubleef_QNT;
     private javax.swing.JButton Effect_BTN;
+    public static javax.swing.JButton Effect_BTN;
     private javax.swing.JLabel Extras_LBL;
     private org.edisoncor.gui.button.ButtonIcon Fries_IMG;
     private javax.swing.JLabel Fries_LBL;
@@ -415,5 +519,10 @@ public class Pedido_GUI extends javax.swing.JFrame {
     public static javax.swing.JLabel Vegano_QNT;
     private javax.swing.JLabel jLabel1;
     public static javax.swing.JTextField jTextField1;
+    public static javax.swing.JTextField ValorTotal_JTF;
+    private javax.swing.JLabel ValorTotal_LBL;
+    private org.edisoncor.gui.button.ButtonIcon Vegano_IMG;
+    private javax.swing.JLabel Vegano_LBL;
+    public static javax.swing.JLabel Vegano_QNT;
     // End of variables declaration//GEN-END:variables
 }
