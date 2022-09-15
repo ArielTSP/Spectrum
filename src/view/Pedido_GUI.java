@@ -375,7 +375,7 @@ public class Pedido_GUI extends javax.swing.JFrame {
             }
         });
         Background.add(limparPedido_BTN);
-        limparPedido_BTN.setBounds(410, 420, 99, 40);
+        limparPedido_BTN.setBounds(399, 420, 110, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -397,8 +397,12 @@ public class Pedido_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_Close_BTNActionPerformed
 
     private void Effect_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Effect_BTNActionPerformed
-        new Pagamento_GUI().setVisible(true);
-        this.dispose();
+        boolean verificacao = model.checaFuncoes_DAO.checarFuncaoPedido();
+        
+        if (verificacao == true){
+            new Pagamento_GUI().setVisible(true);
+            this.dispose();
+        }
     }//GEN-LAST:event_Effect_BTNActionPerformed
 
     private void Classic_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Classic_IMGActionPerformed
