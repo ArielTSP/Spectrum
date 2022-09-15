@@ -209,4 +209,42 @@ public class pedido_DAO {
         }
     }
     
+    public static void limparPedidos(){
+        
+        // Limpar Preço - Variáveis
+        
+        valor_total = 0;
+        
+        // Limpar Quantidades - Variáveis
+        
+        classic = 0;
+        vegano = 0;
+        cheddarcon = 0;
+        crook = 0;
+        doubleef = 0;
+        tower = 0;
+        coca_cola = 0;
+        suco_natural = 0;
+        nuggets = 0;
+        batata_frita = 0;
+        
+        // Limpar Preço - JTF
+        
+        view.Pedido_GUI.ValorTotal_JTF.setText("R$ 0.00");
+        
+        // Limpar Quantidades - LBL
+        
+        view.Pedido_GUI.Classic_QNT.setText("0");
+        view.Pedido_GUI.Vegano_QNT.setText("0");
+        view.Pedido_GUI.Cheddarcon_QNT.setText("0");
+        view.Pedido_GUI.Crook_QNT.setText("0");
+        view.Pedido_GUI.Doubleef_QNT.setText("0");
+        view.Pedido_GUI.Tower_QNT.setText("0");
+        view.Pedido_GUI.Cola_QNT.setText("0");
+        view.Pedido_GUI.Juice_QNT.setText("0");
+        view.Pedido_GUI.Fries_QNT.setText("0");
+        view.Pedido_GUI.Chicken_QNT.setText("0");
+        
+    }
+    
 }

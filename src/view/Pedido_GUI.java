@@ -66,6 +66,7 @@ public class Pedido_GUI extends javax.swing.JFrame {
         Effect_BTN = new javax.swing.JButton();
         ValorTotal_JTF = new javax.swing.JTextField();
         ValorTotal_LBL = new javax.swing.JLabel();
+        limparPedido_BTN = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -352,19 +353,29 @@ public class Pedido_GUI extends javax.swing.JFrame {
             }
         });
         Background.add(Effect_BTN);
-        Effect_BTN.setBounds(290, 430, 150, 40);
+        Effect_BTN.setBounds(240, 420, 150, 40);
 
         ValorTotal_JTF.setEditable(false);
         ValorTotal_JTF.setText("R$ 0.00");
         Background.add(ValorTotal_JTF);
-        ValorTotal_JTF.setBounds(290, 400, 150, 20);
+        ValorTotal_JTF.setBounds(240, 390, 150, 20);
 
         ValorTotal_LBL.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
         ValorTotal_LBL.setForeground(new java.awt.Color(255, 255, 255));
         ValorTotal_LBL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ValorTotal_LBL.setText("Valor Total");
         Background.add(ValorTotal_LBL);
-        ValorTotal_LBL.setBounds(290, 380, 150, 14);
+        ValorTotal_LBL.setBounds(240, 370, 150, 14);
+
+        limparPedido_BTN.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        limparPedido_BTN.setText("Limpar Pedido");
+        limparPedido_BTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                limparPedido_BTNActionPerformed(evt);
+            }
+        });
+        Background.add(limparPedido_BTN);
+        limparPedido_BTN.setBounds(410, 420, 99, 40);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -429,6 +440,10 @@ public class Pedido_GUI extends javax.swing.JFrame {
     private void Tower_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tower_IMGActionPerformed
         model.pedido_DAO.recebaPedido(10);
     }//GEN-LAST:event_Tower_IMGActionPerformed
+
+    private void limparPedido_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limparPedido_BTNActionPerformed
+        model.pedido_DAO.limparPedidos();
+    }//GEN-LAST:event_limparPedido_BTNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -505,5 +520,6 @@ public class Pedido_GUI extends javax.swing.JFrame {
     private org.edisoncor.gui.button.ButtonIcon Vegano_IMG;
     private javax.swing.JLabel Vegano_LBL;
     public static javax.swing.JLabel Vegano_QNT;
+    public static javax.swing.JButton limparPedido_BTN;
     // End of variables declaration//GEN-END:variables
 }
