@@ -357,9 +357,6 @@
                     <Property name="editable" type="boolean" value="false"/>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="lineWrap" type="boolean" value="true"/>
-                    <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="*m4rF&amp;^Qf27&gt;bC:A))JT&apos;;V!FG)#/[s;Zm@u;f*G+8PPYBU3*@}o4o2F79*mkndb/B:o&apos;SBT{Jxot_fM8!&apos;9Qu]4A@_UuZ`Ua=MFeqC7(@Cm?fNj_m#&amp;=7&apos;8"/>
                   </Properties>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>

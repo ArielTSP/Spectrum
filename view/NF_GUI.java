@@ -238,7 +238,6 @@ public class NF_GUI extends javax.swing.JFrame {
     public static javax.swing.JTextField CPF_JTF;
     private javax.swing.JLabel CPF_LBL;
     private javax.swing.JButton Close_BTN;
-
     public static javax.swing.JTextField Contato_JTF;
     private javax.swing.JButton Finalizar_BTN;
     private javax.swing.JLabel Greetings_LBL;
@@ -246,16 +245,11 @@ public class NF_GUI extends javax.swing.JFrame {
     public static javax.swing.JTextField Nome_JTF;
     private javax.swing.JLabel Nome_LBL;
     private javax.swing.JLabel Num_Contato_LBL;
-    
     public static javax.swing.JTextField Payment_M_JTF;
     private javax.swing.JLabel Payment_M_LBL;
     public static javax.swing.JTextArea Pedido_JXT;
     private javax.swing.JLabel Pedido_LBL;
-
-    private javax.swing.JScrollPane Pedido_TXT;
-    
     public static javax.swing.JScrollPane Pedido_TXT;
-
     public static javax.swing.JTextField TotalPay_JTF;
     private javax.swing.JLabel TotalPay_LBL;
     // End of variables declaration//GEN-END:variables
