@@ -44,6 +44,8 @@ public class NF_GUI extends javax.swing.JFrame {
         TotalPay_JTF = new javax.swing.JTextField();
         Imprimir_BTN = new javax.swing.JButton();
         Finalizar_BTN = new javax.swing.JButton();
+        Num_Contato_LBL = new javax.swing.JLabel();
+        Contato_JTF = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -161,6 +163,17 @@ public class NF_GUI extends javax.swing.JFrame {
         Background.add(Finalizar_BTN);
         Finalizar_BTN.setBounds(350, 390, 170, 50);
 
+        Num_Contato_LBL.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Num_Contato_LBL.setForeground(new java.awt.Color(255, 255, 255));
+        Num_Contato_LBL.setText("Contato");
+        Background.add(Num_Contato_LBL);
+        Num_Contato_LBL.setBounds(190, 400, 140, 20);
+
+        Contato_JTF.setEditable(false);
+        Contato_JTF.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        Background.add(Contato_JTF);
+        Contato_JTF.setBounds(190, 420, 140, 20);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -225,11 +238,13 @@ public class NF_GUI extends javax.swing.JFrame {
     public static javax.swing.JTextField CPF_JTF;
     private javax.swing.JLabel CPF_LBL;
     private javax.swing.JButton Close_BTN;
+    public static javax.swing.JTextField Contato_JTF;
     private javax.swing.JButton Finalizar_BTN;
     private javax.swing.JLabel Greetings_LBL;
     private javax.swing.JButton Imprimir_BTN;
     public static javax.swing.JTextField Nome_JTF;
     private javax.swing.JLabel Nome_LBL;
+    private javax.swing.JLabel Num_Contato_LBL;
     public static javax.swing.JTextField Payment_M_JTF;
     private javax.swing.JLabel Payment_M_LBL;
     public static javax.swing.JTextArea Pedido_JXT;

@@ -203,7 +203,9 @@ public class Pagamento_GUI extends javax.swing.JFrame {
 
         ChavePix_JXT.setEditable(false);
         ChavePix_JXT.setColumns(20);
+        ChavePix_JXT.setLineWrap(true);
         ChavePix_JXT.setRows(5);
+        ChavePix_JXT.setText("*m4rF&^Qf27>bC:A))JT';V!FG)#/[s;Zm@u;f*G+8PPYBU3*@}o4o2F79*mkndb/B:o'SBT{Jxot_fM8!'9Qu]4A@_UuZ`Ua=MFeqC7(@Cm?fNj_m#&=7'8");
         ChavePix_TXT.setViewportView(ChavePix_JXT);
 
         Panel_PIX_PNL.add(ChavePix_TXT);
