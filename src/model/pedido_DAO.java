@@ -241,7 +241,7 @@ public class pedido_DAO {
         view.Pedido_GUI.Doubleef_QNT.setText("0");
         view.Pedido_GUI.Tower_QNT.setText("0");
         view.Pedido_GUI.Cola_QNT.setText("0");
-        view.Pedido_GUI.Juice_QNT.setText("0");
+        view.Pedido_GUI.Onion_QNT.setText("0");
         view.Pedido_GUI.Fries_QNT.setText("0");
         view.Pedido_GUI.Chicken_QNT.setText("0");
         
