@@ -16,7 +16,8 @@ public class jdbc_DB {
     public static int alface = 3750; // Gramas (250g) /5 - 15g
     public static int cola = 11250; // Mililitro 750ml
     public static int suco = 7500; // Mililitro 500ml
-    public static int batata_frita = 3750; // Gramas 100g
-    public static int nuggets = 3750; // Gramas 100g
-    
+    public static int agua = 7500; // Mililitro 500ml
+    public static int batata_frita = 3750; // Gramas 250g
+    public static int nuggets = 3750; // Gramas 250g
+    public static int onion = 3750; // Gramas 250g
 }

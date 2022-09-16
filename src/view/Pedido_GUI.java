@@ -218,7 +218,7 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Classic_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         Classic_LBL.setForeground(new java.awt.Color(255, 255, 255));
-        Classic_LBL.setText("Clássico R$ 10.50");
+        Classic_LBL.setText("Classic R$ 10.50");
         pagOne_PNL.add(Classic_LBL);
         Classic_LBL.setBounds(20, 40, 100, 13);
 
@@ -296,7 +296,7 @@ public class Pedido_GUI extends javax.swing.JFrame {
 
         Crook_LBL.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         Crook_LBL.setForeground(new java.awt.Color(255, 255, 255));
-        Crook_LBL.setText("Crook R$ 17.30");
+        Crook_LBL.setText("Crook R$ 17.50");
         pagOne_PNL.add(Crook_LBL);
         Crook_LBL.setBounds(140, 150, 100, 13);
 
@@ -513,7 +513,7 @@ public class Pedido_GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_Juice_IMGActionPerformed
 
     private void Tower_IMGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tower_IMGActionPerformed
-        // TODO add your handling code here:
+        model.pedido_DAO.recebaPedido(10);
     }//GEN-LAST:event_Tower_IMGActionPerformed
 
     /**

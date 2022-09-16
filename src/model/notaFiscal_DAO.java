@@ -39,6 +39,12 @@ public class notaFiscal_DAO {
         if (model.pedido_DAO.tower != 0){ // Hamburguer Tower
             view.NF_GUI.Pedido_JXT.setText("Tower "+ pedido_DAO.tower +"x \n" + view.NF_GUI.Pedido_JXT.getText());
         }
+        if (model.pedido_DAO.onion_rings != 0){ // Acompanhamento Onion Rings
+            view.NF_GUI.Pedido_JXT.setText("Onion Rings "+ pedido_DAO.onion_rings +"x \n" + view.NF_GUI.Pedido_JXT.getText());
+        }
+        if (model.pedido_DAO.agua_mineral != 0){ // Bebida Agua Mineral
+            view.NF_GUI.Pedido_JXT.setText("Água Mineral "+ pedido_DAO.agua_mineral +"x \n" + view.NF_GUI.Pedido_JXT.getText());
+        }
         
         // Cadastro de Preço Total na Nota Fiscal
         
