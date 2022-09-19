@@ -98,7 +98,7 @@ public class pedido_DAO {
             
             if (controller.jdbc_DB.cola >= 750){
                 
-                valor_total = valor_total + 5;
+                valor_total = valor_total + 7;
                 controller.jdbc_DB.cola -= 750;
                 
                 colaDB += 750;

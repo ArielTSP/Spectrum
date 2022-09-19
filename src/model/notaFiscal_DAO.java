@@ -5,6 +5,8 @@ import view.NF_GUI;
 
 public class notaFiscal_DAO {
     
+    public static String methodPay = "";
+    
     public static void nf_Pedido(){
         
         // Checagem de Produtos Pedidos Selecionados
@@ -61,14 +63,17 @@ public class notaFiscal_DAO {
         if (view.Pagamento_GUI.CartaoDeCredito_RBT.isSelected()){
             
             view.NF_GUI.Payment_M_JTF.setText("Cartão de Crédito");
+            methodPay = "Cartão de Credito";
             
         }else if (view.Pagamento_GUI.Pix_RBT.isSelected()){
             
             view.NF_GUI.Payment_M_JTF.setText("Pagamento via Píx");
+            methodPay = "Pix";
             
         }else if (view.Pagamento_GUI.Dinheiro_RBT.isSelected()){
             
             view.NF_GUI.Payment_M_JTF.setText("Pagamento por Dinheiro");
+            methodPay = "Dinheiro";
             
         }
         
